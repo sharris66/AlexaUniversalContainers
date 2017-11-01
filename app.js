@@ -17,7 +17,7 @@ var alexa = require('alexa-app');
 var PORT = process.env.PORT || 3000;
 
 var app = express();
-var alexaApp = new alexa.app("universalcontainers");
+var alexaApp = new alexa.app("AlexaUniversalContainers");
 
 alexaApp.express({
     expressApp: app,
@@ -86,4 +86,4 @@ alexaApp.intent("AMAZON.HelpIntent", {}, function(request, response) {
 });
 
 app.listen(PORT);
-console.log("Listening on port " + PORT + ", try http://localhost:" + PORT + "/universalcontainers");
+console.log("Listening on port " + PORT + ", try http://localhost:" + PORT + "/AlexaUniversalContainers");
